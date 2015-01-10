@@ -3,15 +3,15 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
-url:              http://getpoole.com
+title:            Brady's Blog
+tagline:          tagline
+url:              http://bstil22.github.io/
 paginate:         1
 baseurl:          /
 author:
-  name:           Mark Otto
-  url:            https://twitter.com/mdo
-  email:          markdotto@gmail.com
+  name:           Brady
+  url:            https://twitter.com/brady_stilwell
+  email:          bstil22@gmail.com
 
 # Custom vars
 version:          1.0.0
