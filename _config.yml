@@ -4,7 +4,7 @@ relative_permalinks: true
 
 # Setup
 title:            Brady's Blog
-tagline:          tagline
+tagline:          
 url:              http://bstil22.github.io/
 paginate:         1
 baseurl:          /
