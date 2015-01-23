@@ -3,8 +3,8 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Brady's Blog
-tagline:          
+title:            utilizing the ballmer peak
+tagline:
 url:              http://bstil22.github.io/
 paginate:         1
 baseurl:          /
@@ -16,4 +16,5 @@ author:
 # Custom vars
 version:          1.0.0
 github:
-  repo:           https://github.com/poole/poole
+repo:           https://github.com/poole/poole
+excerpt_separator: ""
