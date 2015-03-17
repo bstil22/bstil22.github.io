@@ -35,6 +35,7 @@
  * Update the foundational and global aspects of the page.
  */
 
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -319,6 +320,7 @@ tbody tr:nth-child(odd) th {
   color: #c0c0c0;
   letter-spacing: 0;
 }
+
 .nav {
   padding-left: 0;
   margin-bottom: 0;
@@ -326,7 +328,7 @@ tbody tr:nth-child(odd) th {
 }
 
 .nav li a {
-  padding-left: 1em;
+  padding-left: 1rem;
   color: #505050;
   margin-bottom: 0;
 }
@@ -334,7 +336,12 @@ tbody tr:nth-child(odd) th {
   padding-top: 0.15rem;
 }
 .nav{
-  display: inline-flex;
+     display: -webkit-inline-box;
+     display: -webkit-inline-flex;
+     display: -moz-inline-box;
+     display: -ms-inline-flexbox;
+     display: inline-flex;
+     -webkit-align-self: auto;
 }
 
 /*
