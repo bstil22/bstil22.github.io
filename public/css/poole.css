@@ -326,7 +326,7 @@ tbody tr:nth-child(odd) th {
 }
 
 .nav li a {
-  padding-left: 1rem;
+  padding-left: 1em;
   color: #505050;
   margin-bottom: 0;
 }
