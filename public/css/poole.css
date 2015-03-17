@@ -303,7 +303,7 @@ tbody tr:nth-child(odd) th {
 .masthead {
   padding-top:    1rem;
   padding-bottom: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .masthead-title {
   margin-top: 0;
@@ -319,7 +319,23 @@ tbody tr:nth-child(odd) th {
   color: #c0c0c0;
   letter-spacing: 0;
 }
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
 
+.nav li a {
+  padding-left: 1rem;
+  color: #505050;
+  margin-bottom: 0;
+}
+.masthead li {
+  padding-top: 0.15rem;
+}
+.nav{
+  display: inline-flex;
+}
 
 /*
  * Posts and pages
