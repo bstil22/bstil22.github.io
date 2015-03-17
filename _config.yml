@@ -5,7 +5,7 @@ relative_permalinks: true
 # Setup
 title:            utilizing the ballmer peak
 tagline:
-url:              http://bstil22.github.io/
+url:              http://bstil22.github.io
 paginate:         1
 baseurl:          /
 author:
