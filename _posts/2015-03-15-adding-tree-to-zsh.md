@@ -28,6 +28,7 @@ now return to the command line and run:
 
     source .zshrc
 
-##That's It
+
+## That's It
 Now, try it out! Simple type tree in the directory of your choosing and you're
 good to go.
