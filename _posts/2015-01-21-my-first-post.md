@@ -23,24 +23,23 @@ Now that we have the basics set up, lets create a form that allows our applicati
 to accept user input.
 {% highlight html %}
 <body>
-<h4>Enter Quote</h4>
-<input type="text" id="stock" placeholder="Ex. AAPL"  />
-<p id="error"></p>
-<button type="submit" id="symbol">Submit</button>
-<div id="price"></div>
-<div id="time"></div>
-
-<script src="stock.js" charset="utf-8"></script>
-<div id="container"></div>
+    <h4>Enter Quote</h4>
+    <form>
+        <input id="stock" placeholder="Ex. AAPL" type="text">
+    </form>
+    <p id="error"></p>
+    <button id="symbol" type="submit">Submit</button>
+    <div id="price"></div>
+    <div id="time"></div>
+    <script src="stock.js"></script>
+    <div id="container"></div>
 </body>
-
-</html>
 {% endhighlight %}
 Notice that I linked to a javascript file named stock.js. In your stock.js file,
 add the below code. Notice that the setup function simply fetches the data
 and formats it.
 {% highlight js %}
-setup = function() {
+setup = function () {
   $("#symbol").click(function() {
     var stockQuote = $("#stock").val();
     var req = $.get("https://www.quandl.com/api/v1/datasets/WIKI/" +
@@ -55,12 +54,12 @@ setup = function() {
       }
 
       renderChart(stockQuote, stockTimeSeries)
-      })
-      .error(function(data) {
+    });
+    .error(function(data) {
         $("#error").html("Please enter a valid symbol.");
-        })
-        });
-      }
+    });
+  });
+};
 {% endhighlight %}
 Now that we have our data formatted properly for highcharts charting library, lets
 add the proper code to create the stock charts. But before we add the charting functionality,
@@ -82,24 +81,19 @@ function renderChart(title, timeSeries) {
     rangeSelector: {
       selected: 1
       },
-      // xAxis: {
-        // 	type: "datetime", //add this line
-        // },
+    title: {
+      text: title
+    },
+    series: [{
+      name: title,
+      data: timeSeries,
+      tooltip: {
+        valueDecimals: 2
+      }
+    }]
+  });
+};
 
-        title: {
-          text: title
-          },
-
-          series: [{
-            name: title,
-            data: timeSeries,
-            tooltip: {
-              valueDecimals: 2
-            }
-            }]
-            })
-          }
-
-          setup();
+setup();
 {% endhighlight %}
 That's all she wrote. Open it up in the browser and check it out!
