@@ -22,7 +22,7 @@ a new directory and altering my function search path to read that directory. I s
 web for a bit and found [a solution](http://www.kingluddite.com/tools/adding-tree-command-to-the-terminal-mac-osx) that worked perfectly. Simply open up your .zshrc file
 and add this code:
 
-      alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+    alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 now return to the command line and run:
 
